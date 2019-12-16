@@ -1,0 +1,88 @@
+@import "null.scss";// Обнуление
+
+$fz:24px;
+
+body {
+	font-family: 'Comfortaa';
+	background: url(../img/bg.jpg);
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: auto; 
+	margin-left:  auto; 
+	max-width: 1200px;
+}
+.header {
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+	h2 {
+		color: #fff;
+		font-size: 32px;
+		line-height: 36px;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+}
+h1 {
+	color: #fff;
+	font-size: 112px;
+	line-height: 145px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.content {
+	text-align: center;
+	padding: 15px;
+	border: 2px solid #000;
+	min-height: 100%;
+	background-color: #fff;
+	flex: 1 1 auto;
+	a {
+		color: black;
+	}
+}
+.button {
+	width: 50%;
+	margin: 20px 0;
+	font-size: $fz;
+	padding: 10px;
+	border-radius: 10px;
+	&:hover {
+		box-shadow: 0 0 10px rgba(0,0,0,0.6)
+	}
+}
+.lab {
+	display: flex;
+	width: 100%;
+	margin: 10px;
+	padding: 10px;
+	background: #DF0000;
+	font-size: $fz;
+	color: #fff;
+	border-radius: 10px;
+	&:hover {
+		box-shadow: 0 0 10px rgba(0,0,0,1)
+	}
+}
+
+.fast {
+	font-size: $fz;
+	padding: 10px;
+	margin-bottom: 30px;
+	border: 3px dashed #000;
+}
+progress{
+	width: 50%;
+	height: 30px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.scale__header{
+	margin: 10px;
+}
+img {
+	margin-top: 10px;
+	border: 1px solid #000;
+	display: block;
+	max-width: 40%;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ACAS</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<h1>Animated Content Aware Scale</h1>
+			<h2>Тот самый скрипт, с помощью которого содержимое фото изменяет свой масштаб</h2>
+		</div>
+		<div class='content'>
+	    	<input type="file" id="input" style="visibility:hidden;position:fixed;z-index:-1;bottom:0;right:0;"/>
+	    	<label for="input" class='lab'>Добавьте файл (.jpg .png)</label><br>
+	    	<div class="fast">
+	    		<input type="checkbox" checked/> Быстрое масштабирование <span><i>(Отключите, если хотите посмотреть на процесс масштабирования)</i></span>
+	    	</div>
+	    	
+			<button class='button' onclick="doEverything(this,0,window.url,function(url,args){document.getElementById('res').download='aware.png';document.getElementById('res').href=document.getElementById('r').src=url;document.getElementById('res').style.display='';args[0].removeAttribute('disabled');window.otherBtn(args[0]).removeAttribute('disabled');document.querySelector('#input').removeAttribute('disabled');});">2x Масштаб</button><br/>
+			<progress min="0" max="100" value="0"></progress>
+			<img id="i" src="image.jpg"/>
+			<input type="file" id="input" style="visibility:hidden;	position:fixed;z-index:-1;bottom:0;right:0;"/>
+			<a id="res" style="display:none; font-size: 24px;" href="image.jpg" class='download' download="aware.png">Нажмите, чтобы скачать<img id="r"/></a>
+			<canvas id="c" style="display:none;"></canvas><br>
+			<canvas id="d" style="display:none;"></canvas><br>
+			<script src="gif.js"></script>
+			<script src="noconflict-gifuct-js.min.js"></script>
+			<script src="carver.js"></script>
+		</div>
+	</div>
+	
+</body>
+</html>
