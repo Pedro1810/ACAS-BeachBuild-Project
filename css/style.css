@@ -58,50 +58,37 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: 'Comfortaa';
-  background: url(../img/bg.jpg); }
+  background: url(../img/bg.jpg) 0 0 no-repeat scroll; }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: -ms-grid;
+  display: grid;
+  grid-template-row: 1fr 2fr;
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px; }
 
 .header {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  justify-items: center;
   text-align: center;
-  padding: 10px; }
+  padding: 20px; }
   .header h2 {
     color: #fff;
     font-size: 32px;
-    line-height: 36px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 h1 {
   color: #fff;
-  font-size: 112px;
-  line-height: 145px;
+  font-size: 86px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
 
 .content {
-  text-align: center;
-  padding: 15px;
-  border: 2px solid #000;
+  display: -ms-grid;
+  display: grid;
+  justify-items: left;
+  padding: 20px 80px;
   min-height: 100%;
-  background-color: #fff;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto; }
+  background-color: #fff; }
   .content a {
     color: black; }
 
@@ -116,12 +103,12 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); }
 
 .lab {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-inline-grid;
+  display: inline-grid;
   width: 100%;
-  margin: 10px;
+  margin-bottom: 10px;
   padding: 10px;
+  text-align: center;
   background: #DF0000;
   font-size: 24px;
   color: #fff;
@@ -131,22 +118,16 @@ h1 {
     box-shadow: 0 0 10px black; }
 
 .fast {
-  font-size: 24px;
-  padding: 10px;
-  margin-bottom: 30px;
-  border: 3px dashed #000; }
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 33,33%; }
 
 progress {
-  width: 50%;
-  height: 30px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-
-.scale__header {
-  margin: 10px; }
+  width: 25%;
+  height: 15px; }
 
 img {
-  margin-top: 10px;
+  margin: 20px 0;
   border: 1px solid #000;
   display: block;
   max-width: 40%; }

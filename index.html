@@ -18,12 +18,11 @@
 	    	<div class="fast">
 	    		<input type="checkbox" checked/> Быстрое масштабирование <span><i>(Отключите, если хотите посмотреть на процесс масштабирования)</i></span>
 	    	</div>
-	    	
 			<button class='button' onclick="doEverything(this,0,window.url,function(url,args){document.getElementById('res').download='aware.png';document.getElementById('res').href=document.getElementById('r').src=url;document.getElementById('res').style.display='';args[0].removeAttribute('disabled');window.otherBtn(args[0]).removeAttribute('disabled');document.querySelector('#input').removeAttribute('disabled');});">2x Масштаб</button><br/>
 			<progress min="0" max="100" value="0"></progress>
 			<img id="i" src="image.jpg"/>
 			<input type="file" id="input" style="visibility:hidden;	position:fixed;z-index:-1;bottom:0;right:0;"/>
-			<a id="res" style="display:none; font-size: 24px;" href="image.jpg" class='download' download="aware.png">Нажмите, чтобы скачать<img id="r"/></a>
+			<a id="res" style="display:none; font-size: 24px;" href="image.jpg" download="aware.png">Нажмите, чтобы скачать<img id="r"/></a>
 			<canvas id="c" style="display:none;"></canvas><br>
 			<canvas id="d" style="display:none;"></canvas><br>
 			<script src="gif.js"></script>
@@ -33,4 +32,4 @@
 	</div>
 	
 </body>
-</html>
+</html>s
