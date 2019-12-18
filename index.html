@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ACAS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
@@ -18,8 +19,10 @@
 	    	<div class="fast">
 	    		<input type="checkbox" checked/> Быстрое масштабирование <span><i>(Отключите, если хотите посмотреть на процесс масштабирования)</i></span>
 	    	</div>
-			<button class='button' onclick="doEverything(this,0,window.url,function(url,args){document.getElementById('res').download='aware.png';document.getElementById('res').href=document.getElementById('r').src=url;document.getElementById('res').style.display='';args[0].removeAttribute('disabled');window.otherBtn(args[0]).removeAttribute('disabled');document.querySelector('#input').removeAttribute('disabled');});">2x Масштаб</button><br/>
-			<progress min="0" max="100" value="0"></progress>
+	    	<div class="progress">
+				<button class='button' onclick="doEverything(this,0,window.url,function(url,args){document.getElementById('res').download='aware.png';document.getElementById('res').href=document.getElementById('r').src=url;document.getElementById('res').style.display='';args[0].removeAttribute('disabled');window.otherBtn(args[0]).removeAttribute('disabled');document.querySelector('#input').removeAttribute('disabled');});">2x Масштаб</button><br/>
+				<progress min="0" max="100" value="0"></progress>
+			</div>
 			<img id="i" src="image.jpg"/>
 			<input type="file" id="input" style="visibility:hidden;	position:fixed;z-index:-1;bottom:0;right:0;"/>
 			<a id="res" style="display:none; font-size: 24px;" href="image.jpg" download="aware.png">Нажмите, чтобы скачать<img id="r"/></a>
