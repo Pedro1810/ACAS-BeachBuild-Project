@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: 'Comfortaa';
-  background: url(../img/bg.jpg) 0 0 no-repeat scroll; }
+  background: url(../img/bg.jpg); }
 
 .wrapper {
   display: -ms-grid;
@@ -92,16 +92,6 @@ h1 {
   .content a {
     color: black; }
 
-.button {
-  width: 50%;
-  margin: 20px 0;
-  font-size: 24px;
-  padding: 10px;
-  border-radius: 10px; }
-  .button:hover {
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); }
-
 .lab {
   display: -ms-inline-grid;
   display: inline-grid;
@@ -117,14 +107,33 @@ h1 {
     -webkit-box-shadow: 0 0 10px black;
     box-shadow: 0 0 10px black; }
 
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%; }
+  .progress progress {
+    min-height: 25px;
+    min-width: 40%; }
+  .progress .button {
+    width: 50%;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px; }
+    .progress .button:hover {
+      -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); }
+
 .fast {
   font-size: 16px;
-  margin-bottom: 10px;
-  width: 33,33%; }
-
-progress {
-  width: 25%;
-  height: 15px; }
+  width: 50%; }
 
 img {
   margin: 20px 0;
